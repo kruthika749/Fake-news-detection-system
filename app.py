@@ -17,9 +17,9 @@ import traceback
 # ----------------------------
 # === CONFIG - set these ====
 # ===== GOOGLE SEARCH VERIFICATION CONFIG =====
-GOOGLE_PROJECT_ID = "fakenewsdetector-475707"
-GOOGLE_API_KEY =  "AIzaSyA-bOeSRgRU8Knb3p_Lq3HWmHqphG26pDI"
-GOOGLE_CSE_ID =  "c7801bfa189914fb2" 
+GOOGLE_PROJECT_ID = "your project id"
+GOOGLE_API_KEY =  "your api key"
+GOOGLE_CSE_ID =  "your cse id" 
 
 from googleapiclient.discovery import build
 
@@ -89,8 +89,8 @@ def show_google_cse_results(query):
 
 import requests
 from googleapiclient.discovery import build
-GOOGLE_API_KEY =  "AIzaSyA-bOeSRgRU8Knb3p_Lq3HWmHqphG26pDI"
-GOOGLE_CSE_ID =  "c7801bfa189914fb2" 
+GOOGLE_API_KEY =  ""
+GOOGLE_CSE_ID =  "" 
 
 def google_fact_check(query):
     """
@@ -481,6 +481,7 @@ with input_tab[2]:
                 else:
                     st.warning(f"🤔 UNCERTAIN ({result['confidence']}%)")
                 show_google_cse_results(extracted_text)
+
 
 
 
