@@ -1,0 +1,12 @@
+streamlit
+transformers
+torch
+pytesseract
+Pillow
+requests
+beautifulsoup4
+speechrecognition
+streamlit-webrtc
+whisper
+numpy
+av
